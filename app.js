@@ -17,7 +17,10 @@ export const app = express();
 
 //cors option
 var corsOptions = {
-  origin: ["https://totofrontend.vercel.app"],
+  origin: [
+    "https://totofrontend.vercel.app",
+    "https://totofrontend.vercel.app/",
+  ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
   // optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
